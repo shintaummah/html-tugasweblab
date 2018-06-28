@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>WEB LAB</title>
+
+    <!-- menyisipkan bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/navbar.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+
+    <!--viewport-->
+     <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<!--navbar-->
+<!-- available colors: primary | secondary | white | ghost-->
+<!-- available sizes: xl | lg | md | sm-->
+<!-- the bootstrap navbar-->
+<nav class="navbar navbar-fixed-top navbar--color--ghost navbar--size--sm" data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--sm">
+  <div class="container">
+    <div class="navbar-header">
+    </div>
+    <div class="collapse navbar-collapse" id="mobileNav">
+<nav class="navbar" style="margin-top:20px;">
+        <div class="container-fluid">
+            <div class="navbar-header"  >
+              <img src="assets/images/logolab.jpg" style="width:60px; height:60px;">
+              <a style="color:#000; width:20px;"><b>Database Laboratory</b></a>
+            </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li  class="active"><a href="index.html" style="color:#000;">Home</a></li>
+            <li><a href="member.html" style="color:#000;">Member</a></li>
+            <li><a href="formdaftar.html" style="color:#000;">Daftar</a></li>
+        </ul>           
+        </div>
+</nav>
+</nav>
+<!-- some content to allow scrolling :)-->
+<div class=" navbar--size--xl navbar--color--white">
+
+   <div   style="position: absolute; margin-top:100px; width:300px;">
+            <img src="assets/images/joe-large copy.png"  style="width:400px;"> 
+  </div>
+<div class="container">
+   <div  style="position: absolute; margin-top:300px; margin-left:70%; ">
+            <img src="assets/images/logolab.jpg" class="right"> 
+  </div>
+    <div class="container navbar-collapse ">
+      <h1 style="margin-top: 100px; color: #333;">Form Pendaftaran</h1>
+      <h2  style=" font-size:20px; font-family: 'PT Mono', monospace;">Isi Form Berikut :</h2>
+      <img src="assets/images/linehoz.png" style="width:100px; height:40px;">
+    </div> 
+    <div class="container" style="width:500px;  ">
+      <form action="/action_page.php" >
+        <div class="form-group"> 
+           <label for="nama">NAMA LENGKAP:</label>
+          <input type="text" class="form-control" id="nama" placeholder="NAMA LENGKAP" name="nama" style="background-color:#F5F5F5; height:60px; ">
+        </div>
+        <div class="form-group">
+          <label for="nim">NIM:</label>
+          <input type="text" class="form-control" id="nim" placeholder="NIM" name="nim" style="background-color:#F5F5F5; height:60px; ">
+        </div>
+         <div class="form-group">
+          <label for="jurusan">JURUSAN:</label>
+          <input type="text" class="form-control" id="jurusan" placeholder="JURUSAN" name="jurusan" style="background-color:#F5F5F5; height:60px; ">
+        </div>
+            <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="background-color:#F5F5F5; height:60px;">
+       </div>
+       <div class="form-group">
+          <label for="nohp">NO HP:</label>
+          <input type="number" class="form-control" id="nohp" placeholder="NO HP" name="nohp" style="background-color:#F5F5F5; height:60px; ">
+        </div>
+
+        
+
+
+        <div class="form-group" >
+          <label for="sel1">KELOMPOK KEAHLIAN:</label>
+          <select class="form-control" id="sel1" style="background-color:#F5F5F5; height: 60px;">
+            <option>STUDY GROUP</option>
+            <option>RESEARCH GROUP</option>
+          </select>
+        </div> 
+        <button type="button" class="btn btn-primary">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+</div>
+</div>
+<body>
+</body>
+<footer class="navbar-collapse navbar--size--xl " style="background-color:#333;">
+        <h1 style="color: #fff">Say Hey</h1>
+        <p>F205 | basisdatalab.com</p>
+</footer>
+</html>

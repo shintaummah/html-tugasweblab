@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>WEB LAB</title>
+
+    <!-- menyisipkan bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/navbar.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+
+    <!--viewport-->
+     <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<!--navbar-->
+<!-- available colors: primary | secondary | white | ghost-->
+<!-- available sizes: xl | lg | md | sm-->
+<!-- the bootstrap navbar-->
+<nav class="navbar navbar-fixed-top navbar--color--ghost navbar--size--sm" data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--sm">
+  <div class="container">
+    <div class="navbar-header">
+    </div>
+    <div class="collapse navbar-collapse" id="mobileNav">
+<nav class="navbar" style="margin-top:20px;">
+        <div class="container-fluid">
+            <div class="navbar-header"  >
+              <img src="assets/images/logolab.jpg" style="width:60px; height:60px;">
+              <a style="color:#000; width:20px;"><b>Database Laboratory</b></a>
+            </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li  class="active"><a href="index.html" style="color:#000;">Home</a></li>
+            <li><a href="member.html" style="color:#000;">Member</a></li>
+            <li><a href="formdaftar.html" style="color:#000;">Daftar</a></li>
+        </ul>           
+        </div>
+</nav>
+</nav>
+<div  class="container navbar--size--xl navbar--color-white">
+      <div class="col-xs-6 navbar-right" >
+          <img src="assets/images/ben-large.jpg"> 
+      </div>
+      <div class="col-xs-6  ">
+        <div class="navbar-collapse container" style="text-align: left;">
+          <h1 >Nama</h1>
+          <p style="padding-top: 0;">Jabatan</p>
+          <img src="assets/images/linehoz.png" style="width:80px; height:30px;">
+          <div style="color:#000;font-size:12px;">
+            <p>Like a baby bird taking flight Ben has grown Elegant Seagulls from a one-man operation to one of the largest agencies in MI. As creative director he oversees all things design. When not cracking hilarious jokes Ben enjoys surfing, snowboarding, CrossFit, and spending time with his family and two dogs.</p>
+          </div> 
+        </div>
+        <div class="w3-content" style="text-align:center;">
+            <img src="assets/images/linehoz.png" style="width:50%;">
+            <div class="mySlides" >
+                <div class="col-xs-6">
+                  <img src="assets/images/1.png" style="width:45%;">
+                </div>
+                <div class="col-xs-6" style="text-align: left; margin-top:0;">
+                  <h1 style="font-size:20px">Nama Anggota</h1>
+                  <p style="font-size:13px">Lorem Ipsum is not simply random text.Lorem Ipsum is not simply random text.When not cracking hilarious jokes Ben enjoys surfing.</p>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="col-xs-6">
+                  <img src="assets/images/2.png" style="width:45%">
+                </div>
+                <div class="col-xs-6" style="text-align: left;">
+                  <h1 style="font-size:20px">Nama Anggota</h1>
+                  <p style="font-size:13px">Lorem Ipsum is not simply random text.Lorem Ipsum is not simply random text.When not cracking hilarious jokes Ben enjoys surfing.</p>
+                </div>
+            </div>
+        
+            <button class="glyphicons-chevron-left" onclick="plusDivs(-1)">&#10094;</button>
+            <img src="assets/images/linehoz.png" style="width:50%;">
+            <button class="glyphicons-chevron-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <script type="text/javascript">
+          var slideIndex = 1;
+          showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+        </script>
+      </div>
+  </div>
+</body>
+<footer class="navbar-collapse navbar--size--xl " style="background-color:#333;">
+        <h1 style="color: #fff">Say Hey</h1>
+        <p>F205 | basisdatalab.com</p>
+</footer>
